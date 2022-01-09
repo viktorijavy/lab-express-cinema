@@ -1,0 +1,26 @@
+<a href="/">Back to home</a>
+
+<h1>Ironhack Cinema</h1>
+<h3>Click on the movie to check the showtimes</h3>
+
+<a href="/movie-new">Add a new movie</a>
+
+<div class="item-container-main">
+{{#each movies}}
+
+
+<div class="movie-container">
+    <div>
+        <h2>{{title}}</h2>
+    </div>
+    <div>
+        <img src="{{image}}" alt="{{title}}" width="200px">
+    </div>
+    <div>
+        <a class="btn" href="/movies/{{_id}}">See more</a>
+    </div>
+
+</div>
+
+{{/each}}
+</div>
